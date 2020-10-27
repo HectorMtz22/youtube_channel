@@ -1,0 +1,21 @@
+%videos {
+  margin: 20px;
+  display: grid;
+  gap: 10px;
+  iframe {
+    height: 350px;
+  }
+}
+
+.videos-desktop {
+  @extend %videos;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.videos-mobile {
+  @extend %videos;
+  grid-template-columns: 1fr;
+  iframe {
+    height: 200px;
+  }
+}
