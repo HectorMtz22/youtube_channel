@@ -6,6 +6,9 @@ function Header() {
   isMobile ? (banner = "banner-mobile") : (banner = "banner-desktop");
   return (
     <header>
+      <div className="bannerImg">
+        <img src="/img/header/header1.jpg" alt="" />
+      </div>
       <nav>
         <h1>Canal de YT</h1>
       </nav>
